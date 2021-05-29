@@ -1,3 +1,13 @@
+# Forking Notes
+
+I forked this theme from https://github.com/calintat/minimal
+
+Here are some instructions for how to make changes to the fork and keep it up to
+date with the upstream:
+
+https://www.andrewhoog.com/post/git-submodule-for-hugo-themes/
+
+
 # Minimal
 
 Personal blog theme powered by [Hugo](https://gohugo.io).
