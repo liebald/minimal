@@ -35,7 +35,9 @@
         {{ partial "body-open" . }}
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">{{ .Site.Params.author }}</a>
+            {{ if .Site.Params.ShortTitle }}
+            <a class="navbar-brand" href="/">{{ .Site.Params.ShortTitle }}</a>
+            {{ end }}
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -52,6 +54,7 @@
                 {{ end }}
               </ul>
               {{ end }}
+
               {{ if .Site.Menus.icon }}
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {{ range sort .Site.Menus.icon }}
@@ -59,6 +62,8 @@
                 {{ end }}
               </ul>
               {{ end }}
+
+
             </div>
           </div>
         </nav>
